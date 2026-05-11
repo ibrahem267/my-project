@@ -29,6 +29,17 @@
       flex-wrap: wrap;
     }
 
+    /* 🌀 حركة propeller */
+    .propeller {
+      display: inline-block;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
     .container {
       padding: 20px;
     }
@@ -47,6 +58,12 @@
       border-radius: 10px;
       margin-top: 10px;
     }
+
+    .sub {
+      color: #aaa;
+      font-size: 14px;
+      margin-top: 5px;
+    }
   </style>
 </head>
 
@@ -55,11 +72,11 @@
 <header>
 
   <div class="title">
-    🛳️ Marine Propulsion System
-    <span>🌀</span>
+    ⚙️ Marine Propulsion System
+    <span class="propeller">🌀</span>
   </div>
 
-  <p>Using Holographic AI Visualization</p>
+  <div class="sub">Using Holographic AI Visualization</div>
 
 </header>
 
@@ -68,12 +85,13 @@
   <div class="card">
     <h2>📌 Project Description</h2>
     <p>
-      A marine engineering project focused on propulsion systems and AI visualization concepts.
+      A marine engineering project focused on propulsion systems with AI-based visualization concepts.
+      This project demonstrates modern analysis of marine jet propulsion systems.
     </p>
   </div>
 
   <div class="card">
-    <h2>🎥 Videos</h2>
+    <h2>🎥 Project Videos</h2>
 
     <video controls>
       <source src="WhatsApp Video 2026-05-11 at 4.00.02 AM.mp4">
@@ -108,5 +126,4 @@
 </div>
 
 </body>
-</html>
 </html>
